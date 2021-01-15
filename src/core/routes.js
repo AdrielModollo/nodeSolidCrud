@@ -1,3 +1,4 @@
+const routeDataFactory = (db, app) => {
 
 app.get('/', (req, res) => {
     var cursor = db.collection('data').find()
@@ -66,3 +67,4 @@ app.route('/delete/:id')
     res.redirect('/show')
   })
 })
+}
