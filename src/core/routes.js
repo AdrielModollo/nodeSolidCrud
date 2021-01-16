@@ -7,11 +7,7 @@ app.get('/', (req, res) => {
 //exibe
 app.get('/show', (req, res) => {
 
-    db.collection('data').find().toArray((err, results) => {
-        if (err) return console.log(err)
-        res.render('show.ejs', { data: results })
-
-    })
+    //Retorna valor do models
 })
 
 //adiciona
